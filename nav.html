@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <title>Navigation Bar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </button>
+                <div class="dropdown-content">
+                    <li class="li-hidden"><a class="home" href="#">Home</a></li>
+                    <li class="li-hidden"><a href="#">Places</a></li>
+                    <li class="li-hidden"><a href="#">Hotels</a></li>
+                    <li class="li-hidden"><a href="#">Restaurants</a></li>
+                    <li class="li-hidden"><a href="#">Transportation</a></li>
+
+                    <li><a href="#">Egypt</a></li> <!-- Second level menu item with link -->
+                    <li><a href="#">Buy Now!</a></li>
+                    <li><a href="#">registration</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+            </div>
+            <div class="logo_container">
+                <h1>HI<span id="EGYPT">EGYPT</span></h1>
+            </div>
+
+            <div class="page-total">
+
+                <ul class="ul-page-total" >
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a href="#">Places</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Transportation</a></li>
+                </ul>
+
+            </div>
+            <button class="login-button">Log In</button>
+
+        </nav>
+
+    </header>
+    <div class="all">
+        
+    </div>
+
+</body>
+<script>
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+</html>
